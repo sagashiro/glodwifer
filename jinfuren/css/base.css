@@ -1,0 +1,384 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+/* 版头导航栏 */
+.wrap-nav {
+    width: 100%;
+    background: #fff;
+}
+
+.nav {
+    width: 1200px;
+    height: 116px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-img {
+    background: url(../images/logo.jpg) no-repeat;
+    height: 117px;
+    width: 156px;
+}
+
+.search-box {
+    display: flex;
+}
+
+.search-box span {
+    font-size: 14px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.search-box form {
+    position: relative;
+    margin-right: 38px;
+}
+
+.search-box form>div {
+    border-radius: 12px;
+    border: 1px solid #000;
+    width: 222px;
+    height: 25px;
+}
+
+.search-box input {
+    outline: none;
+    border: none;
+    margin-left: 10px;
+}
+
+.icon-sousuo {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 14px;
+    margin-right: 12px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.nav-text span {
+    font-size: 18px;
+    line-height: 18px;
+    display: inline-block;
+    padding-bottom: 8px;
+    text-align: center;
+    margin: 0px 39px;
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+    transition: all 0.3s;
+}
+
+.nav-text span:last-child {
+    margin-right: 0px;
+}
+
+.nav-text span:hover {
+    border-bottom: 2px solid #830a13;
+}
+
+/* 轮播banner图  */
+.wrap-banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.banner img:last-of-type {
+    position: static;
+    opacity: 1;
+}
+
+.wrap-banner>button {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    background: transparent;
+    font-size: 20px;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+}
+
+.wrap-banner>button:nth-of-type(1) {
+    left: 20px;
+}
+
+.wrap-banner>button:nth-of-type(2) {
+    right: 20px;
+}
+
+.wrap-banner>button:hover {
+    background: rgba(245, 245, 245, 0.3);
+}
+
+.wrap-banner>button:active {
+    background: rgba(245, 245, 245, 0.5);
+}
+
+.wrap-banner>ul {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 58px;
+    text-align: center;
+    margin-left: -29px;
+}
+
+.wrap-banner li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.wrap li.active {
+    background: #ccc;
+}
+
+/* 内容板块 */
+
+.wrap-content {
+    width: 100%;
+    background: #fff;
+}
+
+.content {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+
+.content nav {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 8px;
+    margin-top: 26px;
+    border-bottom: 1px solid #666666;
+}
+
+.content>nav>span {
+    font-size: 14px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+.content>nav>span.active {
+    color: #830914;
+}
+
+.content-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.con-list {
+    border-left: 1px solid #666666;
+    height: auto;
+    padding-left: 9px;
+}
+
+.con-list h2>img {
+    position: absolute;
+    left: -15px;
+    top: 2px;
+}
+
+.con-list h2 {
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 20px;
+    opacity: 1;
+    position: relative;
+    cursor: pointer;
+}
+
+.con-list h2.active {
+    color: #8d2c33;
+}
+
+.con-list h2>div {
+    color: #808080;
+    font-size: 14px;
+    height: 0;
+    opacity: 0;
+}
+.con-list h2>div.active{
+    height: auto;
+    opacity: 1;
+}
+.con-list h2>div p {
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.con-list h2>div p.active {
+    color: #8d2c33;
+}
+
+.right-con {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.right-con article {
+    position: relative;
+    width: 845px;
+    height: 365px;
+    border: 1px solid #666666;
+    margin-top: 65px;
+    margin-bottom: 54px;
+    box-sizing: border-box;
+    padding: 45px 16px 0px 195px;
+}
+
+.right-con article>img {
+    position: absolute;
+    right: 233px;
+    top: -33px;
+}
+
+.content-links {
+    position: absolute;
+    left: -60px;
+    bottom: 25px;
+    background: #666666;
+    width: 240px;
+    height: 360px;
+}
+
+.content-links>img {
+    position: absolute;
+    left: -36px;
+    bottom: 42px;
+}
+
+.right-con-txt p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.content-video-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 43px;
+}
+
+.content-video-img span {
+    margin: 8px;
+    display: inline-block;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.content-video-img span>img {
+    width: 100%;
+}
+
+.content-video-img span:hover::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "点击观看";
+    color: #fff;
+    width: 100%;
+    height: 30%;
+    background: rgba(255, 192, 203, 0.5);
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.content-video-img>span.active {
+    width: 307px;
+    height: 205px;
+}
+
+.video-btn {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 16px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.video-btn:active {
+    color: #b44241;
+}
+
+.content-video .icon-jiantou1 {
+    font-size: 45px;
+}
+
+.video-btn:nth-of-type(1) {
+    left: -20px;
+    transform: translate(0, -50%)rotateY(180deg);
+}
+
+.video-btn:nth-of-type(2) {
+    right: 25px;
+}
+
+/* 页尾 */
+.wrap-footer {
+    width: 100%;
+    background: #666666;
+}
+
+.footer {
+    width: 1200px;
+    height: 92px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+}
